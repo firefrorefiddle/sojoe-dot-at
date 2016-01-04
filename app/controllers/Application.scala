@@ -24,7 +24,7 @@ class Application extends Controller {
 }
 
 object Application {
-  def siteName = "cv.sojoe.at"
+  def siteName = "sojoe.at"
   def pageTitle(title: String) =
     if(title == "") siteName
     else title + " - " + siteName
