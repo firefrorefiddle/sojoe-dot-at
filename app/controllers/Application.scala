@@ -10,11 +10,13 @@ import org.jscience.physics.amount.Amount
 class Application extends Controller {
 
   def index = Action {
-    RelativisticModel.select()
-    val m = Amount.valueOf("12 GeV").to(KILOGRAM)
-    val testRelativity = s"E=mc^2: 12 GeV = $m"
-    Ok(views.html.index(testRelativity))
-//    Ok(views.html.index("Your new application is ready."))
+    Ok(views.html.index(""))
   }
+
+  def cv = Action {
+    Ok(views.html.cv(""))
+  }
+
+  
 
 }
