@@ -2,9 +2,10 @@ body {
   padding-top: 50px;
 }
 .content {
-  padding: 40px 15px;
+  padding: 50px 15px;
   text-align: center;
 }
-article.content {
-  text-align: left;
+article.artcl {
+    padding: 10px;
+    text-align: left;
 }
