@@ -10,13 +10,22 @@ import org.jscience.physics.amount.Amount
 class Application extends Controller {
 
   def index = Action {
-    Ok(views.html.index(""))
+    Ok(views.html.index())
   }
 
   def cv = Action {
-    Ok(views.html.cv(""))
+    Ok(views.html.cv())
   }
 
-  
+  def projects = Action {
+    Ok(views.html.projects())
+  }
 
+}
+
+object Application {
+  def siteName = "cv.sojoe.at"
+  def pageTitle(title: String) =
+    if(title == "") siteName
+    else title + " - " + siteName
 }
