@@ -21,6 +21,22 @@ class Application extends Controller {
     Ok(views.html.projects())
   }
 
+  def tech = Action {
+    Ok(views.html.tech())
+  }
+
+  def about = Action {
+    Ok(views.html.about())
+  }
+
+  def thisSite = Action {
+    Ok(views.html.thisSite())
+  }
+
+  def contact = Action {
+    Ok(views.html.contact())
+  }
+
 }
 
 object Application {

@@ -1,0 +1,3 @@
+@(active: String, name: String, route: play.api.mvc.Call, label: String)
+
+<li @if(active == name) {class="active"}><a href="@route">@label</a></li>

@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(title: String, active: String)(content: Html)
 
 <!DOCTYPE html>
 
@@ -24,7 +24,7 @@
     </head>
     <body>
 
-      @header()
+      @header(active)
       <section>
 
 	<div class="container">

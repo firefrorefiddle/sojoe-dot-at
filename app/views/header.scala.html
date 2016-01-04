@@ -1,3 +1,5 @@
+@(active: String)
+
 <header>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -12,10 +14,7 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-	  <li class="active"><a href="@routes.Application.cv">Curriculum Vitae</a></li>
-	  <li><a href="@routes.Application.projects">My Projects</a></li>
-	  <li><a href="#about">Who or What is "SoJoE"?</a></li>
-          <li><a href="#contact">Contact</a></li>
+	  @sitemap(active)
         </ul>
       </div><!--/.nav-collapse -->
     </div>

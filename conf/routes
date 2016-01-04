@@ -3,9 +3,13 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
-GET     /cv                         controllers.Application.cv
-GET     /projects                   controllers.Application.projects
+GET     /               controllers.Application.index
+GET     /cv             controllers.Application.cv
+GET     /projects       controllers.Application.projects
+GET     /about          controllers.Application.about
+GET     /tech           controllers.Application.tech
+GET     /contact        controllers.Application.contact
+GET     /thisSite       controllers.Application.thisSite
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
