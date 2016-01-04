@@ -27,5 +27,5 @@ object Application {
   def siteName = "sojoe.at"
   def pageTitle(title: String) =
     if(title == "") siteName
-    else title + " - " + siteName
+    else title
 }
