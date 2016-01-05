@@ -134,6 +134,7 @@ object Animation extends js.JSApp {
 
 //  @JSExport
   def drawSystem() {
+    println(new java.util.Date().getTime())
     scala.scalajs.js.Dynamic.global.window.requestAnimationFrame(() => drawSystem)
     ctx.clearRect(0,0,canvas.width,canvas.height)
     setSize()
