@@ -4,6 +4,7 @@
  */
 
 import sbt.Project.projectToRef
+import NativePackagerKeys._
 
 lazy val clients = Seq(scalajs)
 lazy val scalaV = "2.11.7"
