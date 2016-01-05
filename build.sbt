@@ -1,6 +1,6 @@
 
 lazy val commonSettings = Seq(
-  name := """play-scala""",
+  name := """sojoe-dot-at""",
   version := "1.0-SNAPSHOT")
 
 lazy val root = (project in file("server"))
