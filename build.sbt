@@ -39,6 +39,7 @@ lazy val scalajs = (project in file("scalajs"))
 		persistLauncher in Test := false,
 //		sourceMapsDirectories += sharedJs.base / "..",
 //		unmanagedSourceDirectories in Compile := Seq((scalaSource in Compile).value),
+		libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0",
 		libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0"))
   .enablePlugins(ScalaJSPlugin, ScalaJSPlay)
   .dependsOn(sharedJs)
