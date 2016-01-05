@@ -6,7 +6,7 @@
 import sbt.Project.projectToRef
 
 lazy val clients = Seq(scalajs)
-lazy val scalaV = "2.11.6"
+lazy val scalaV = "2.11.7"
 
 lazy val commonSettings = Seq(
   name := """sojoe-dot-at""",
