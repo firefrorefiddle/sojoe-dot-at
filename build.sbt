@@ -10,8 +10,7 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  specs2 % Test,
-  "org.jscience" % "jscience" % "4.3.1"
+  specs2 % Test
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
