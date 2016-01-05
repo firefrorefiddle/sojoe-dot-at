@@ -12,6 +12,7 @@ class Application extends Controller {
   def about    = Action { Ok(views.html.about()) }
   def thisSite = Action { Ok(views.html.thisSite()) }
   def contact  = Action { Ok(views.html.contact()) }
+  def scalaJS  = Action { Ok(views.html.scalaJS()) }
 }
 
 object Application {
