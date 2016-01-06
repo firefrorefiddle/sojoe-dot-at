@@ -24,8 +24,6 @@ lazy val server = (project in file("server"))
 		  "com.vmunier" %% "play-scalajs-scripts" % "0.3.0",
 		  "org.webjars" % "jquery" % "1.11.1"),
 		resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
-		// Play provides two styles of routers, one expects its actions to be injected, the
-		// other, legacy style, accesses its actions statically.
 		routesGenerator := InjectedRoutesGenerator,
 		scalaJSProjects := clients,
 		pipelineStages := Seq(scalaJSProd, gzip)
@@ -38,8 +36,6 @@ lazy val scalajs = (project in file("scalajs"))
   .settings(commonSettings)
   .settings(Seq(persistLauncher := true,
 		persistLauncher in Test := false,
-//		sourceMapsDirectories += sharedJs.base / "..",
-//		unmanagedSourceDirectories in Compile := Seq((scalaSource in Compile).value),
 		libraryDependencies += "be.doeraene" %%% "scalajs-jquery" % "0.8.0",
 		libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0"))
   .enablePlugins(ScalaJSPlugin, ScalaJSPlay)
@@ -48,7 +44,6 @@ lazy val scalajs = (project in file("scalajs"))
 lazy val shared = (crossProject.crossType(CrossType.Pure) in file("shared"))
   .settings(scalaVersion := scalaV)
   .jsConfigure(_ enablePlugins ScalaJSPlay)
-//  .jsSettings(sourceMapsBase := baseDirectory.value / "..")
 
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
