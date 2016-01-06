@@ -5,7 +5,9 @@ import org.scalajs.jquery.jQuery
 import scala.scalajs.js.annotation.JSExport
 import Math._
 
-object Animation {
+import twodee.shapes
+
+object Animation2 {
 
   object Geometry {
     
