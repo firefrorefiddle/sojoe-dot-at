@@ -40,12 +40,15 @@ lazy val scalajs = (project in file("scalajs"))
 		libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "0.8.0"))
   .enablePlugins(ScalaJSPlugin, ScalaJSPlay)
   .dependsOn(sharedJs)
-  
+  .dependsOn(twodee)
+
 lazy val shared = (crossProject.crossType(CrossType.Pure) in file("shared"))
   .settings(scalaVersion := scalaV)
   .jsConfigure(_ enablePlugins ScalaJSPlay)
 
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
+
+lazy val twodee = RootProject(uri("git://github.com/firefrorefiddle/twodee.git"))
 
 onLoad in Global := (Command.process("project server", _: State)) compose (onLoad in Global).value
