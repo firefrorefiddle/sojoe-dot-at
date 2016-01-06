@@ -1,3 +1,5 @@
+package demov1
+
 import org.scalajs.dom
 import org.scalajs.dom.html
 import org.scalajs.dom.html.Canvas
@@ -5,9 +7,7 @@ import org.scalajs.jquery.jQuery
 import scala.scalajs.js.annotation.JSExport
 import Math._
 
-import twodee.shapes
-
-object Animation2 {
+object Animation {
 
   object Geometry {
     
