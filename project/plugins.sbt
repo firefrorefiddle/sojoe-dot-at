@@ -21,4 +21,4 @@ addSbtPlugin("com.vmunier" % "sbt-play-scalajs" % "0.2.8")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-gzip" % "1.0.0")
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "0.8.0-RC2")
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.1")
