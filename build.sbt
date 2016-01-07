@@ -50,6 +50,6 @@ lazy val shared = (crossProject.crossType(CrossType.Pure) in file("shared"))
 lazy val sharedJvm = shared.jvm
 lazy val sharedJs = shared.js
 
-lazy val twodee = RootProject(uri("git://github.com/firefrorefiddle/twodee.git"))
+lazy val twodee = RootProject(file("twodee"))
 
 onLoad in Global := (Command.process("project server", _: State)) compose (onLoad in Global).value
