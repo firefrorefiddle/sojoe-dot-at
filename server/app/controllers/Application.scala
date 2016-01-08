@@ -23,7 +23,7 @@ class Application extends Controller {
       Ok(views.html.main(name, name)(Html(pdProc.markdownToHtml(src.mkString))))
     } catch {
       case ex: java.io.FileNotFoundException => {
-	NotFound
+	NotFound(System.getProperty("user.dir"))
       }
     }
   }
