@@ -1,6 +1,6 @@
 @(active: String)
 
-@link(active, "cv", routes.Application.cv(), "Curriculum Vitae")
-@link(active, "projects", routes.Application.projects, "Projects/Technical Stuff")
-@link(active, "about", routes.Application.about, "What is \"SoJoE\"?")
-@link(active, "contact", routes.Application.contact, "Contact")
+@link(active, "cv", routes.Application.page("cv"), "Curriculum Vitae")
+@link(active, "projects", routes.Application.page("projects"), "Projects/Technical Stuff")
+@link(active, "about", routes.Application.page("about"), "What is \"SoJoE\"?")
+@link(active, "contact", routes.Application.page("contact"), "Contact")

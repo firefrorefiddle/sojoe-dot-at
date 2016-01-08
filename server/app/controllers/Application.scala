@@ -2,17 +2,31 @@ package controllers
 
 import play.api._
 import play.api.mvc._
+import play.api.Play.current
+
+import play.twirl.api.Html
+
+import scala.io._
+
+import org.pegdown.PegDownProcessor
 
 class Application extends Controller {
 
-  def index    = Action { Ok(views.html.index()) }
-  def cv       = Action { Ok(views.html.cv()) }
-  def projects = Action { Ok(views.html.projects()) }
-  def tech     = Action { Ok(views.html.tech()) }
-  def about    = Action { Ok(views.html.about()) }
-  def thisSite = Action { Ok(views.html.thisSite()) }
-  def contact  = Action { Ok(views.html.contact()) }
-  def scalaJS  = Action { Ok(views.html.scalaJS()) }
+  val pdProc = new PegDownProcessor
+
+  def index() = page("index")
+
+  def page(name: String) = Action {
+
+    try {
+      val src = Source.fromFile(Play.getFile(s"markdown/$name.md"))
+      Ok(views.html.main(name, name)(Html(pdProc.markdownToHtml(src.mkString))))
+    } catch {
+      case ex: java.io.FileNotFoundException => {
+	NotFound
+      }
+    }
+  }
 }
 
 object Application {
