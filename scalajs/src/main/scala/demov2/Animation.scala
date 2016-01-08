@@ -24,8 +24,10 @@ object Animation {
       }
     }
     
-  val sun = Anim(() => {
+  val sun = {
     val radius = 0.15
+    val shape = Circle(Scale(0.15))
+
     val colorF = ((p: Vector) => {
       val d = sqrt(p.x*p.x+p.y*p.y)
       val r = 255
