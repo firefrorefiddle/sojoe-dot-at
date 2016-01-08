@@ -30,10 +30,10 @@ object Canvas {
   val raster = Raster(canvas.width, Box.stdBox)
 
   def setSize() {
-    val minW = 100
-    val minH = 100
-    val maxW = 500
-    val maxH = 500
+    val minW = 300
+    val minH = 300
+    val maxW = 300
+    val maxH = 300
 
     val maxProp = 0.3
     val screenW = round(dom.window.screen.availWidth  * maxProp).toInt
@@ -90,8 +90,13 @@ object Canvas {
       }
     }
 
+    val t = new java.util.Date().getTime()
+
     objects = objects map {
       case (id, (box, anim)) => id -> (Some(draw(anim)), anim)
     }
+
+    val u = new java.util.Date().getTime()
+    println(u-t)
   }
 }
