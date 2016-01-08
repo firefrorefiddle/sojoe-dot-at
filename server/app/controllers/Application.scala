@@ -19,7 +19,7 @@ class Application extends Controller {
   def page(name: String) = Action {
 
     try {
-      val src = Source.fromFile(Play.getFile(s"markdown/$name.md"))
+      val src = Source.fromFile(Play.getFile(s"conf/markdown/$name.md"))
       Ok(views.html.main(name, name)(Html(pdProc.markdownToHtml(src.mkString))))
     } catch {
       case ex: java.io.FileNotFoundException => {
