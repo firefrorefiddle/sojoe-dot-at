@@ -20,12 +20,7 @@ class Application extends Controller {
 
     try {
       val src = Source.fromFile(Play.getFile(s"conf/markdown/$name.md"))
-      val html = Html(pdProc.markdownToHtml(src.mkString))
-      val html2 = Application.specialTreatment(name) match {
-	case None    => html
-	case Some(f) => f(html)
-      }
-      Ok(views.html.main(name, name)(html2))
+      Ok(views.html.main(name, name)(Html(pdProc.markdownToHtml(src.mkString))))
     } catch {
       case ex: java.io.FileNotFoundException => {
 	NotFound
@@ -35,16 +30,8 @@ class Application extends Controller {
 }
 
 object Application {
-
   def siteName = "sojoe.at"
-
   def pageTitle(title: String) =
     if(title == "") siteName
     else title
-
-  def specials = Map.empty
-
-  def specialTreatment(name: String): Option[(Html => Html)] = {
-    specials get name
-  }
 }
