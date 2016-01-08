@@ -33,17 +33,45 @@ object Animation {
       val b = round(gradientVal(d, (0,radius), (150,100)))
       s"rgb($r,$g,$b)"
     })
-    
-    ColoredShape(Circle(Scale(0.15)), colorF)
-  })
+    Anim(() => {
+      ColoredShape(shape, colorF)
+    })
+  }
 
-  val earth = Anim(() => {
-    val radius = 0.05
-    val t = new java.util.Date().getTime/1000.0
-    val coords = Vector(cos(t)*0.8, sin(t)*0.8)
-    val shape  = Circle.unit scale radius translate coords
-    ColoredShape(shape, (_ => "blue"))
-  })
+  val spaceShipShape = {
+    def circledRect(length: Double, width: Double) = {
+      val w = width
+      val r = w/2
+      val sl = length-2*r
+      val end = Circle.unit scale (r)
+      val middle = RegularPolygon.square.scale(sl, w)
+
+      end.translate( length/2, 0) + 
+      middle + 
+      end.translate(-(length/2), 0)
+    }
+
+    val disc   = Circle.unit scale 0.05
+    val body   = circledRect(0.1,  0.025)
+    val engine = circledRect(0.08, 0.02)
+    
+    body +
+    disc.translate(0.05,0) +
+    engine.translate(-0.07,  0.025) +
+    engine.translate(-0.07, -0.025)
+  }
+
+  val spaceShip = {
+    val shape = spaceShipShape
+    val color = ((_:Vector) => "grey")
+    Anim(() => {
+      val t = new java.util.Date().getTime/1000.0
+      val coords = Vector(cos(t)*0.8, sin(t)*0.8)
+      ColoredShape(
+	shape.rotateAroundOrigin(Rad(t+PI/2)).translate(coords),
+	color)
+    })
+  }
 
   def animate() {
     scala.scalajs.js.Dynamic.global.window.requestAnimationFrame(() => animate)
@@ -53,7 +81,7 @@ object Animation {
   def drawSystem() {
     Canvas.init()
     Canvas.add("sun", sun)
-    Canvas.add("earth", earth)
+    Canvas.add("ship", spaceShip)
     animate()
   }
 }
