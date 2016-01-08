@@ -135,7 +135,6 @@ object Animation {
 
   def drawSystem() {
     scala.scalajs.js.Dynamic.global.window.requestAnimationFrame(() => drawSystem)
-    ctx.clearRect(0,0,canvas.width,canvas.height)
     setSize()
     background()
     sun()
