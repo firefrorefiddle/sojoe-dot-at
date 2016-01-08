@@ -45,15 +45,15 @@ object Animation {
       val w = width
       val r = w/2
       val sl = length-2*r
-      val end = Circle.unit scale (r)
-      val middle = RegularPolygon.square.scale(sl, w)
+      val end = Circle.unit scaleFromOrigin r
+      val middle = RegularPolygon.square.scaleFromOrigin(sl, w)
 
       end.translate( length/2, 0) + 
       middle + 
       end.translate(-(length/2), 0)
     }
 
-    val disc   = Circle.unit scale 0.05
+    val disc   = Circle.unit scaleFromOrigin 0.05
     val body   = circledRect(0.1,  0.025)
     val engine = circledRect(0.08, 0.02)
     
