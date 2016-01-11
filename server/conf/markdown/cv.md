@@ -1,6 +1,26 @@
 Curriculum Vitae
 ================
 
+Quick Facts
+-----------
+<table id="quickfacts">
+<tr><th>Name</th><td>Michael Hartl</td></tr>
+<tr><th>Age</th><td>33 (as of Jan 2016)</td></tr>
+<tr><th>Programming Language</th><td>Haskell</td></tr>
+<tr><th>Lives in</th><td>Saalfelden (soon!)</td></tr>
+<tr><th>Family</th><td>Married, <a href="/page/about">three children</a></td></tr>
+<tr><th>Life vision</th><td>Solve Problems through Quality Technology</td></tr>
+</table>
+
+
+Future
+------
+Presenting a CV most-recent first, what is the most recent? If its not the future yet, then it will soon be. I am planning a move away from Vienna and back to my home town Saalfelden this summer (around August).
+
+I do not known what I will be doing then, but I would like to develop great software for a company in the area (I am not particularly fond of teleworking and work best when I see my colleages face to face).
+
+Now, on to the present and past.
+
 Work Experience
 ---------------
 <table>
@@ -114,3 +134,10 @@ Work Experience
 Early Life
 ----------
 
+I grew up in [Saalfelden](https://en.wikipedia.org/wiki/Saalfelden), a beautiful town in the midst of the Austrian Alps. I got my first computer at around age 10 (so this was in the early 90s), and I think it was an 8086 IBM XT (second hand, after it was retired from my father's office). In any case, it was a great system. It had a black-and-white monitor and was equipped with MS-DOS 3.30a and some business software I didn't understand.
+
+Lacking a mouse or Windows I soon became more knowledgeable about the command line, although it was not before my second computer, an 80286 (no Windows either - I didn't miss it much though!) that I learned all the commands in the manual by heart (DOS 5.00; in those days it was really simple to do, I think it was only about 50 or so commands. Compare that to a contemporary Linux distribution!).
+
+I did my first "programming" by looking at the files comprising an account program (I think) called MultPlan. I found out that they described simple menus you could navigate through with the keyboard so I started writing kind of an adventure game using it. Of course I didn't know about turing completeness or combinatorial explosions or I would not have tried such an impossible endeavour.
+
+Later I learned a bit of QBasic and Turbo Pascal just by looking at source code and reading online help and remember it as quite overwhelming. So it was not before I learned JavaScript, Java and some other things at school and until the Internet revolutionized my life when I was 17 that I really "got into" programming.

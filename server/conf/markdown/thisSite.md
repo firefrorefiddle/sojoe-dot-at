@@ -1,7 +1,7 @@
 This Site - Technically Speaking
 ================================
 
-This is a [Play 2 framework](http://www.playframework.com) site hosted by [Heroku](http://heroku.com).
+This is a [Play 2 framework](http://www.playframework.com) site hosted by [Heroku](http://heroku.com). Just in case you were wondering: it is 100% my own doing.
 
 I don't actually have much experience with Play, besides one short university project (which used to reside on the private git server of a colleage, but unfortunately is gone by now), but I remembered it as a nice and clean MVC framework and since I had played around with Scala for some time I decided to do this site in Play.
 
