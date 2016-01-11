@@ -10,8 +10,11 @@ article.artcl {
     text-align: left;
 }
 td.cvjob {
-    width: 10em;
+    width: 23em;
 }
 td.cvdate {
     width: 6em;
+}
+td.cvjobdesc {
+    font-style: italic
 }
