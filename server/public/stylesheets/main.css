@@ -19,5 +19,7 @@ td.cvjobdesc {
     font-style: italic
 }
 #quickfacts th {
-    width: 15em
+    text-align: right;
+    padding-right: 0.5em
+
 }
