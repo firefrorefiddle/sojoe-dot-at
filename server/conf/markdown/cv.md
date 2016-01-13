@@ -103,6 +103,12 @@ Work Experience
 		<li>Constant communication
 	</ul
 </td></tr>
+<tr>
+	<td class="cvdate">Oct. 2002</td>
+	<td class="cvdate">Sept. 2003</td>
+	<td class="cvjob">Civilian Service</td>
+	<td><a href="http://www.lebenshilfe.at/">Lebenshilfe Salzburg</a></td>		
+</tr>
 </table>
 
 
