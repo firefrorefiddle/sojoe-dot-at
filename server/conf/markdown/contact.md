@@ -9,4 +9,4 @@ Thor 10
 
 Austria
 
-mikehartl17 (at) gmail (dot) com
+<mike@sojoe.at>
