@@ -1,1 +1,6 @@
-cv.label=Lebenslauf
+menu.cv=Lebenslauf
+menu.projects=Projekte/Technologien
+menu.sojoe=Wer ist SoJoE?
+menu.contact=Kontakt
+nav.toggle=Navigation ein/aus
+meta.description=Meine Entwickler-Homepage

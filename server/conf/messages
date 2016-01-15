@@ -1,1 +1,6 @@
-cv.label=Curriculum Vitae
+menu.cv=Curriculum Vitae
+menu.projects=Projects/Technical Stuff
+menu.sojoe=Who is SoJoE?
+menu.contact=Contact
+nav.toggle=Toggle navigation
+meta.description=My personal developer''s homepage
