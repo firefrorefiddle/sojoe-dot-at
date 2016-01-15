@@ -1,6 +1,7 @@
-@(active: String)
+@(active: String)(implicit lang: Lang, messages: Messages)
+@import play.api.i18n.Messages.Implicits._
 
-@link(active, "cv", routes.Application.page("cv"), "Curriculum Vitae")
+@link(active, "cv", routes.Application.page("cv"), Messages("cv.label"))
 @link(active, "projects", routes.Application.page("projects"), "Projects/Technical Stuff")
 @link(active, "about", routes.Application.page("about"), "What is \"SoJoE\"?")
 @link(active, "contact", routes.Application.page("contact"), "Contact")
