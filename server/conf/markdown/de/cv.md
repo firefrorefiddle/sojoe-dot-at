@@ -14,11 +14,11 @@ Auf einen Blick
 
 Zukunft
 -------
-Ich präsentiere diesen Lebenslauf in gestürzter Reihenfolge; zuerst kommt das aktuellste. Was könnte dann aktueller sein als die Zukunft? Die sieht so aus: Ich werde aus Wien in meine Heimatstadt Saalfelden ziehen (ungefähr im August).
+Wenn man einen Lebenslauf in umgekehrter Reihenfolge präsentiert, muss man mit der Zukunft anfangen. Diesen Sommer (2016) werde ich mit meiner Familie nach Saalfelden im Salzburger Land übersiedeln, und weiß noch nicht genau, was ich dort machen werde.
 
-Was ich dort machen werde, weiß ich noch nicht, aber ich hoffe, großartige Software für eine Firma in der Nähe entwickeln zu können (Teleworking ist nicht meine erste Vorliebe, sondern ich funktioniere am Besten, wenn ich meine Kollegen persönlich sehen kann).
+Ich suche einen Arbeitgeber in Pendelentfernung, idealerweise mit der Gelegenheit zur Zusammenarbeit in einem guten, kleinen Team und interessanten Herausforderungen.
 
-Damit aber weiter zur Gegenwart und zur Vergangenheit.
+Damit aber weiter zur Gegenwart, und zur Vergangenheit.
 
 Berufserfahrung
 ---------------
