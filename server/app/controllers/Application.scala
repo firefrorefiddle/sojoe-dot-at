@@ -19,6 +19,9 @@ class Application extends Controller {
   def page(name: String) = Action {
     implicit request => {
 
+      /* We try to serve an article in the user's preferred
+       * language, but fall back to anything we can find if it's not there.
+       */
       val langs = request.acceptLanguages.map(_.code) ++ List("en", "de");
 
       def tryLang(lang: String): Option[Source] = {
