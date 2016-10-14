@@ -64,7 +64,7 @@ Work Experience
 </td></tr>
 
 <tr>
-	<td class="cvdate">Sept 2007</td>
+	<td class="cvdate">Sept. 2007</td>
 	<td class="cvdate">June 2008</td>
 	<td class="cvjob">Sabbatical, see <a href="#education">Education</td>
 	<td></td>
