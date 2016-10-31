@@ -7,18 +7,10 @@ Auf einen Blick
 <tr><th>Name</th><td>Michael Hartl</td></tr>
 <tr><th>Alter</th><td>33 (Stand 01.2016)</td></tr>
 <tr><th>Programmiersprache</th><td>Haskell (, Scala, Clojure, Prolog, C, Java, C++; geordnet nach Sympathie)</td></tr>
-<tr><th>Wohnort</th><td>Saalfelden (bald!)</td></tr>
+<tr><th>Wohnort</th><td>Saalfelden am Steinernen Meer</td></tr>
 <tr><th>Familienstand</th><td>Verheiratet, <a href="/page/about">drei Kinder</a></td></tr>
 <tr><th>Lebensvision</th><td>Probleme durch hochwertige Technologie lösen</td></tr>
 </table>
-
-Zukunft
--------
-Wenn man einen Lebenslauf in umgekehrter Reihenfolge präsentiert, muss man mit der Zukunft anfangen. Diesen Sommer (2016) werde ich mit meiner Familie nach Saalfelden im Salzburger Land übersiedeln, und weiß noch nicht genau, was ich dort machen werde.
-
-Ich suche einen Arbeitgeber in Pendelentfernung, idealerweise mit der Gelegenheit zur Zusammenarbeit in einem guten, kleinen Team und interessanten Herausforderungen.
-
-Damit aber weiter zur Gegenwart, und zur Vergangenheit.
 
 Berufserfahrung
 ---------------
@@ -30,10 +22,16 @@ Berufserfahrung
 	<th>Arbeitgeber</th>
 </tr>
 <tr>
-	<td class="cvdate">Sept. 2014</td>
 	<td class="cvdate">Sept. 2016</td>
-	<td>System Administrator</td>
-	<td>Technische Universität Wien, <a href="http://www.geoinfo.tuwien.ac.at/">Forschungsgruppe für Geoinformation</a></td>
+	<td class="cvdate"></td>
+	<td>Softwareentwickler</td>
+	<td><a href="http://www.lohn.at">Lohn & HR GmbH</a>, St. Johann/Pongau</td>
+</tr>
+<tr>
+	<td class="cvdate">Sept. 2014</td>
+	<td class="cvdate">Juli 2016</td>
+	<td>Systemadministrator</td>
+	<td>Technische Universität Wien, <a href="http://www.geoinfo.tuwien.ac.at/">Forschungsgruppe Geoinformation</a></td>
 </tr>
 <tr><td></td><td></td><td colspan="2" class="cvjobdesc">
 		Administration von Linux-Servern (hauptsächlich mit Ubuntu and Debian);

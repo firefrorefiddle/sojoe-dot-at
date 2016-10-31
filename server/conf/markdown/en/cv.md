@@ -6,20 +6,12 @@ Quick Facts
 <table id="quickfacts">
 <tr><th>Name</th><td>Michael Hartl</td></tr>
 <tr><th>Age</th><td>33 (as of Jan 2016)</td></tr>
-<tr><th>Programming Language</th><td>Haskell</td></tr>
-<tr><th>Lives in</th><td>Saalfelden (soon!)</td></tr>
+<tr><th>Programming Language of Choice</th><td>Haskell</td></tr>
+<tr><th>Lives in</th><td>Saalfelden</td></tr>
 <tr><th>Family</th><td>Married, <a href="/page/about">three children</a></td></tr>
 <tr><th>Life vision</th><td>Solve Problems through Quality Technology</td></tr>
 </table>
 
-
-Future
-------
-Presenting a CV most-recent first, what is the most recent? If its not the future yet, then it will soon be. I am planning a move away from Vienna and back to my home town Saalfelden this summer (around August).
-
-I do not known what I will be doing then, but I would like to develop great software for a company in the area (I am not particularly fond of teleworking and work best when I see my colleages face to face).
-
-Now, on to the present and past.
 
 Work Experience
 ---------------
@@ -31,8 +23,14 @@ Work Experience
 	<th>Employer</th>
 </tr>
 <tr>
-	<td class="cvdate">Sept. 2014</td>
 	<td class="cvdate">Sept. 2016</td>
+	<td class="cvdate"></td>
+	<td>Software Developer</td>
+	<td><a href="http://www.lohn.at">Lohn & HR GmbH</a>, St. Johann/Pongau</td>
+</tr>
+<tr>
+	<td class="cvdate">Sept. 2014</td>
+	<td class="cvdate">July 2016</td>
 	<td>System Administrator</td>
 	<td>Technische Universität Wien, <a href="http://www.geoinfo.tuwien.ac.at/">Research Group for Geoinformation</a></td>
 </tr>
